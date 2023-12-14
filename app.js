@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/sign-in', (req, res) => {
-  res.send('login success!');
+  res.send('login!');
 })
 
 app.listen(port, () => {
