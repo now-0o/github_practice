@@ -7,6 +7,10 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
+app.post('/signup', (req, res) => {
+  res.send("회원가입");
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
