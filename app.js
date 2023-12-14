@@ -18,6 +18,10 @@ app.post('/post', (req, res) => {
   res.send('post!');
 })
 
+app.post('/paymetn', (req, res) => {
+  res.send('post!');
+})
+
 app.listen(port, () => {
   console.log(`app listening on port ${port}`)
 })
