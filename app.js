@@ -9,6 +9,9 @@ app.get('/', (req, res) => {
 
 app.get('/sign-in', (req, res) => {
   res.send('login!');
+
+app.post('/signup', (req, res) => {
+  res.send("회원가입");
 })
 
 app.post('/post', (req, res) => {
