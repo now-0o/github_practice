@@ -8,7 +8,8 @@ app.get('/', (req, res) => {
 })
 
 app.get('/sign-in', (req, res) => {
-  res.send('login!');
+  res.send('login 123!');
+});
 
 app.post('/signup', (req, res) => {
   res.send("회원가입");
@@ -17,6 +18,8 @@ app.post('/signup', (req, res) => {
 app.post('/post', (req, res) => {
   res.send('post!');
 })
+
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
