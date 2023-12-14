@@ -11,6 +11,10 @@ app.get('/sign-in', (req, res) => {
   res.send('login!');
 })
 
+app.post('/post', (req, res) => {
+  res.send('create post!');
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
