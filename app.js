@@ -1,19 +1,20 @@
-
 const express = require('express')
 const app = express()
 const port = 3000
-
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
-
-app.get('/sign-in', (req, res) => {
-  res.send('login!');
 
 app.post('/signup', (req, res) => {
   res.send("회원가입");
 })
 
+app.get('/', (req, res) => {
+  res.send('login!');
+})
+
+app.get('/sign-in', (req, res) => {
+  res.send('Hello World!')
+});
+
+
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(` app listening on port ${port}`)
 })
