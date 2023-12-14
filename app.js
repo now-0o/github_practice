@@ -12,7 +12,7 @@ app.get('/sign-in', (req, res) => {
 })
 
 app.post('/post', (req, res) => {
-  res.send('create post!');
+  res.send('post!');
 })
 
 app.listen(port, () => {
